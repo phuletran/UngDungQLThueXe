@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FFFDE3AE-6EC9-44A2-9FAF-C0A67BE92643}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DemoQLKS</RootNamespace>
+    <AssemblyName>DemoQLKS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\BUSBienLai.cs" />
+    <Compile Include="BUS\BUSDsKH.cs" />
+    <Compile Include="BUS\BUSGiaoDienChinh.cs" />
+    <Compile Include="BUS\BUSHoaDon.cs" />
+    <Compile Include="BUS\BUSLichSuDangNhap.cs" />
+    <Compile Include="BUS\BUSNhanVien.cs" />
+    <Compile Include="BUS\BUSLogin.cs" />
+    <Compile Include="BUS\BUSQLXe.cs" />
+    <Compile Include="BUS\BUSTTThue.cs" />
+    <Compile Include="DAO\DAOBienLai.cs" />
+    <Compile Include="DAO\DAODsKH.cs" />
+    <Compile Include="DAO\DAOGiaoDienChinh.cs" />
+    <Compile Include="DAO\DAOHoaDon.cs" />
+    <Compile Include="DAO\DAOLichSuDangNhap.cs" />
+    <Compile Include="DAO\DAOLichSuHoaDon.cs" />
+    <Compile Include="DAO\DAONhanVien.cs" />
+    <Compile Include="DAO\DAOLogin.cs" />
+    <Compile Include="DAO\DAOQLXe.cs" />
+    <Compile Include="DAO\DAOTThue.cs" />
+    <Compile Include="fBienLai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBienLai.Designer.cs">
+      <DependentUpon>fBienLai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDSKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDSKH.Designer.cs">
+      <DependentUpon>fDSKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHoaDon.Designer.cs">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLichSuDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLichSuDN.Designer.cs">
+      <DependentUpon>fLichSuDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhanVien.Designer.cs">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fGiaodienChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fGiaodienChinh.Designer.cs">
+      <DependentUpon>fGiaodienChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLTX.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTX.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="fQLXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQLXe.Designer.cs">
+      <DependentUpon>fQLXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTTDatXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTTDatXe.Designer.cs">
+      <DependentUpon>fTTDatXe.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fBienLai.resx">
+      <DependentUpon>fBienLai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDSKH.resx">
+      <DependentUpon>fDSKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHoaDon.resx">
+      <DependentUpon>fHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLichSuDN.resx">
+      <DependentUpon>fLichSuDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhanVien.resx">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fGiaodienChinh.resx">
+      <DependentUpon>fGiaodienChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="fQLXe.resx">
+      <DependentUpon>fQLXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTTDatXe.resx">
+      <DependentUpon>fTTDatXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="QLTX.dbml.layout">
+      <DependentUpon>QLTX.dbml</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLTX.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>QLTX.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dich-vu-thue-xe-7-cho-di-du-lich-uy-tin-tai-ha-noi-avatar-653x440.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
