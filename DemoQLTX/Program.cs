@@ -15,7 +15,7 @@ namespace DemoQLKS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fQLXe());
+            Application.Run(new fLogin());
         }
     }
 }

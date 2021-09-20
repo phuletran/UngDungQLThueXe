@@ -22,5 +22,10 @@ namespace DemoQLKS
         {
             busLS.CapNhat(gvLSDN);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

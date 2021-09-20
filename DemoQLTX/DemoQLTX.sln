@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoQLTX", "DemoQLKS\DemoQLTX.csproj", "{FFFDE3AE-6EC9-44A2-9FAF-C0A67BE92643}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoQLTX", "DemoQLTX.csproj", "{FFFDE3AE-6EC9-44A2-9FAF-C0A67BE92643}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

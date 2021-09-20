@@ -47,10 +47,19 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.xemHóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gvDSXe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDSXDT)).BeginInit();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tb_Sc
@@ -184,26 +193,27 @@
             // 
             // gvDSXe
             // 
-            this.gvDSXe.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gvDSXe.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.gvDSXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvDSXe.Location = new System.Drawing.Point(853, 284);
+            this.gvDSXe.Location = new System.Drawing.Point(852, 340);
             this.gvDSXe.Name = "gvDSXe";
-            this.gvDSXe.Size = new System.Drawing.Size(517, 214);
+            this.gvDSXe.Size = new System.Drawing.Size(518, 157);
             this.gvDSXe.TabIndex = 6;
             this.gvDSXe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDSXe_CellContentClick);
             // 
             // gvDSXDT
             // 
-            this.gvDSXDT.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.gvDSXDT.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.gvDSXDT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvDSXDT.Location = new System.Drawing.Point(0, 494);
+            this.gvDSXDT.Location = new System.Drawing.Point(0, 539);
             this.gvDSXDT.Name = "gvDSXDT";
-            this.gvDSXDT.Size = new System.Drawing.Size(1371, 252);
+            this.gvDSXDT.Size = new System.Drawing.Size(1383, 210);
             this.gvDSXDT.TabIndex = 7;
             this.gvDSXDT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvDSXDT_CellContentClick);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.bt_cn);
@@ -217,9 +227,9 @@
             this.panel1.Controls.Add(this.tb_stt);
             this.panel1.Controls.Add(this.ID);
             this.panel1.Controls.Add(this.tb_Sc);
-            this.panel1.Location = new System.Drawing.Point(853, 2);
+            this.panel1.Location = new System.Drawing.Point(853, 58);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(517, 276);
+            this.panel1.Size = new System.Drawing.Size(517, 253);
             this.panel1.TabIndex = 9;
             // 
             // menuStrip1
@@ -247,21 +257,86 @@
             this.danhSáchKháchHàngToolStripMenuItem.Text = "Danh sách khách hàng";
             this.danhSáchKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.danhSáchKháchHàngToolStripMenuItem_Click);
             // 
-            // QLXe
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Cyan;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(853, 25);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(518, 33);
+            this.panel2.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(211, 4);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 22);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "THÔNG TIN";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Cyan;
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel3.Location = new System.Drawing.Point(853, 308);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(518, 32);
+            this.panel3.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.Location = new System.Drawing.Point(201, 7);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(126, 22);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Danh Sách Xe";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Cyan;
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel4.Location = new System.Drawing.Point(0, 497);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1382, 42);
+            this.panel4.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(653, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(229, 22);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Thông tin xe đang cho thuê";
+            // 
+            // fQLXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gvDSXDT);
             this.Controls.Add(this.gvDSXe);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "QLXe";
+            this.Name = "fQLXe";
             this.Text = "QLXe";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.QLXe_Load);
@@ -271,6 +346,12 @@
             this.panel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,5 +378,11 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem xemHóaĐơnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem danhSáchKháchHàngToolStripMenuItem;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -43,6 +43,7 @@
             this.cbSNT = new System.Windows.Forms.ComboBox();
             this.cbSN = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbCMND
@@ -58,7 +59,7 @@
             // tbCMND
             // 
             this.tbCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCMND.Location = new System.Drawing.Point(141, 51);
+            this.tbCMND.Location = new System.Drawing.Point(192, 51);
             this.tbCMND.Name = "tbCMND";
             this.tbCMND.Size = new System.Drawing.Size(100, 23);
             this.tbCMND.TabIndex = 1;
@@ -86,7 +87,7 @@
             // tb_TenKH
             // 
             this.tb_TenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_TenKH.Location = new System.Drawing.Point(141, 89);
+            this.tb_TenKH.Location = new System.Drawing.Point(192, 89);
             this.tb_TenKH.Name = "tb_TenKH";
             this.tb_TenKH.Size = new System.Drawing.Size(100, 23);
             this.tb_TenKH.TabIndex = 1;
@@ -95,7 +96,7 @@
             // 
             this.idXe.AutoSize = true;
             this.idXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idXe.Location = new System.Drawing.Point(132, 16);
+            this.idXe.Location = new System.Drawing.Point(176, 19);
             this.idXe.Name = "idXe";
             this.idXe.Size = new System.Drawing.Size(46, 17);
             this.idXe.TabIndex = 4;
@@ -103,7 +104,7 @@
             // 
             // bt_dat
             // 
-            this.bt_dat.Location = new System.Drawing.Point(91, 292);
+            this.bt_dat.Location = new System.Drawing.Point(125, 284);
             this.bt_dat.Name = "bt_dat";
             this.bt_dat.Size = new System.Drawing.Size(75, 23);
             this.bt_dat.TabIndex = 5;
@@ -124,7 +125,7 @@
             // tb_sdt
             // 
             this.tb_sdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_sdt.Location = new System.Drawing.Point(141, 134);
+            this.tb_sdt.Location = new System.Drawing.Point(192, 134);
             this.tb_sdt.Name = "tb_sdt";
             this.tb_sdt.Size = new System.Drawing.Size(100, 23);
             this.tb_sdt.TabIndex = 3;
@@ -142,7 +143,7 @@
             // tb_dc
             // 
             this.tb_dc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_dc.Location = new System.Drawing.Point(141, 174);
+            this.tb_dc.Location = new System.Drawing.Point(192, 174);
             this.tb_dc.Name = "tb_dc";
             this.tb_dc.Size = new System.Drawing.Size(100, 23);
             this.tb_dc.TabIndex = 3;
@@ -192,7 +193,7 @@
             "29",
             "30",
             "31"});
-            this.cbSNT.Location = new System.Drawing.Point(140, 255);
+            this.cbSNT.Location = new System.Drawing.Point(191, 255);
             this.cbSNT.Name = "cbSNT";
             this.cbSNT.Size = new System.Drawing.Size(54, 21);
             this.cbSNT.TabIndex = 6;
@@ -217,7 +218,7 @@
             "14",
             "15",
             "16"});
-            this.cbSN.Location = new System.Drawing.Point(141, 216);
+            this.cbSN.Location = new System.Drawing.Point(192, 216);
             this.cbSN.Name = "cbSN";
             this.cbSN.Size = new System.Drawing.Size(53, 21);
             this.cbSN.TabIndex = 6;
@@ -226,17 +227,28 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(44, 16);
+            this.label4.Location = new System.Drawing.Point(88, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "MÃ SỐ XE :";
             // 
-            // TTDatXe
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(0, -1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(47, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Đóng";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // fTTDatXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(269, 319);
+            this.ClientSize = new System.Drawing.Size(335, 319);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cbSN);
             this.Controls.Add(this.cbSNT);
             this.Controls.Add(this.bt_dat);
@@ -252,7 +264,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbCMND);
-            this.Name = "TTDatXe";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "fTTDatXe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "TTDatXe";
             this.Load += new System.EventHandler(this.TTDatXe_Load);
@@ -278,5 +291,6 @@
         private System.Windows.Forms.ComboBox cbSNT;
         private System.Windows.Forms.ComboBox cbSN;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }
